@@ -14,8 +14,6 @@ services:
   mongodb:
     image: mongodb:v1
     container_name: mongodb
-    volumes:
-    - mongodb:/data/db
   catalogue:
     image: catalogue:v1
     container_name: catalogue
@@ -24,8 +22,6 @@ services:
   redis:
     image: redis
     container_name: redis
-    volumes:
-    - redis:/data
   user:
     image: user:v1
     container_name: user
